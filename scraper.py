@@ -65,7 +65,7 @@ def scrape_data():
 
             # record
             rec = soup.find('span', {'class': 'b-content__title-record'})
-            record.append(rec.text.strip().strip("Record: "))
+            record.append(rec.text.strip().strip("Record: ")+''')
 
             # bio box
             bio_box = soup.find('ul', {'class':'b-list__box-list'})
